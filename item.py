@@ -3,7 +3,6 @@ class Item():
   def __init__(self, item_name):
     self.name = item_name
     self.description = None
-    self.item_location = {}
     
   def set_description(self, item_description):
     self.description = item_description
@@ -23,3 +22,4 @@ class Item():
   def print_items(self, current_room, all_items):
     if current_room == self.item_location[self]:
       print ("You see a " + self.name)
+
