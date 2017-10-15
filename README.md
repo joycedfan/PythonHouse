@@ -1,15 +1,17 @@
 # PythonHouse
-Creating a collection of rooms and items in python.
+A collection of rooms, items, and characters in python.
 
-I'm learning Object-Oriented Programming in Python on Futurelearn.com
-
+I'm learning Object-Oriented Programming in Python from Futurelearn.com
 Please help me add more rooms and link them together.
+
+---
 
 Add rooms by adding the following code to main.py:
 
 newroom = Room("Insert New Room Name")
 
 newroom.set_description("Insert New Room Description.")
+
 
 Link rooms by adding the following code to main.py:
 
@@ -69,6 +71,26 @@ catrina = Friend("Catrina", "a tall friendly skeleton.")
 catrina.set_conversation("Why hello there, friend!")
 
 ballroom.set_character(catrina)
+
+---
+
+Add Items by adding the following code:
+
+new_item = Item("item name")
+
+new_item.set_description ("description of item")
+
+location_of_item.set_item(new_item)
+
+Example:
+
+cheese = Item("cheese")
+
+cheese.set_description ("a cumbling block of smelly, rotting cheese")
+
+kitchen.set_item(cheese)
+                         
+ ---                        
 
 
 Move through the house here: https://trinket.io/python/c0bf3c7c32
