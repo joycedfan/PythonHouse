@@ -17,4 +17,9 @@ class Item():
     return self.description
   
   def describe(self):
-    print (self.description)
+    print ("You see " + self.description + " here.")
+  
+  def print_items(self, current_room, all_items):
+    if current_room == self.item_location[self]:
+      print ("You see a " + self.name)
+
