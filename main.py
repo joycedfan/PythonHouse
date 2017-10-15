@@ -51,10 +51,10 @@ catrina.set_conversation("Why hello there, friend!")
 ballroom.set_character(catrina)
                          
 key = Item("key")
-key.set_description ("A small shiny key.")
+key.set_description ("a small shiny key")
 
 cheese = Item("cheese")
-cheese.set_description ("A cumbling block of smelly, rotting cheese.")
+cheese.set_description ("a cumbling block of smelly, rotting cheese")
 
 swimming_pool.set_item(key)
 
