@@ -123,6 +123,8 @@ while dead == False:
         current_room.set_item(None)
       else:
         print ("There is nothing here you can take.")
+    elif command == "help":
+      print ("Pick a direction or try talk, fight, hug or take.")
         
     else:
       print("I don't know how to " + command + ".")
