@@ -56,9 +56,19 @@ key.set_description ("a small shiny key")
 cheese = Item("cheese")
 cheese.set_description ("a cumbling block of smelly, rotting cheese")
 
+broken_glass = Item("broken glass")
+broken_glass.set_description ("several broken bottles' worth of broken glass")
+
+weight = Item("weight")
+weight.set_description ("a ten pound iron weight")
+                         
 swimming_pool.set_item(key)
 
 kitchen.set_item(cheese)
+
+wine_cellar.set_item(broken_glass)
+
+gym.set_item(weight)                         
                          
 current_room = kitchen
 
