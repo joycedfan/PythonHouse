@@ -81,8 +81,6 @@ while dead == False:
     print ("\n")
     current_room.get_details()
     
-
-
     inhabitant = current_room.get_character()
     if inhabitant is not None:
       inhabitant.describe()
