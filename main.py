@@ -27,6 +27,7 @@ gym = Room("Gym")
 gym.set_description ("A huge room with a glass ceiling and one yoga ball in the center of the room.")
 
 greenhouse = Room("Greenhouse")
+greenhouse.set_description ("A hot and humid room filled with scrawling vines.")
 
 kitchen.link_room(dining_hall, "south")
 dining_hall.link_room(kitchen, "north")
