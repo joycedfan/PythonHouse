@@ -44,6 +44,7 @@ ballroom.link_room(swimming_pool, "west")
 gym.link_room(swimming_pool, "up")
 swimming_pool.link_room(gym, "down")
 kitchen.link_room(greenhouse, "west")
+greenhouse.link_room(kitchen, "east")
 
 dave = Enemy("Dave", "a smelly, hungry zombie.")
 dave.set_conversation("Brrlgrh... rgrhl... braaains...")
