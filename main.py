@@ -66,7 +66,10 @@ broken_glass.set_description ("several broken bottles' worth of broken glass")
 
 weight = Item("weight")
 weight.set_description ("a ten pound iron weight")
-                         
+
+flower_pot = Item("flower pot")
+flower_pot.set_description ("a small yellow flower pot containing a single daisy")
+
 swimming_pool.set_item(key)
 
 kitchen.set_item(cheese)
