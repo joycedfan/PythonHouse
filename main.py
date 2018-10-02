@@ -26,6 +26,8 @@ swimming_pool.set_description ("A deep pool filled with distilled water with a t
 gym = Room("Gym")
 gym.set_description ("A huge room with a glass ceiling and one yoga ball in the center of the room.")
 
+greenhouse = Room("Greenhouse")
+
 kitchen.link_room(dining_hall, "south")
 dining_hall.link_room(kitchen, "north")
 dining_hall.link_room(ballroom, "west")
