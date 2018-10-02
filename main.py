@@ -19,10 +19,10 @@ cellar.set_description ("A dark smelly room littered with rotting food that emit
 
 wine_cellar = Room("Wine Cellar")
 wine_cellar.set_description ("A nearly pitch black room with empty wineracks along the walls and broken glass on the floor.")
-                         
+
 swimming_pool = Room("Swimming Pool")
 swimming_pool.set_description ("A deep pool filled with distilled water with a tiny bit of chlorine and urine.")
-                         
+
 gym = Room("Gym")
 gym.set_description ("A huge room with a glass ceiling and one yoga ball in the center of the room.")
 
@@ -54,7 +54,7 @@ dining_hall.set_character(dave)
 catrina = Friend("Catrina", "a tall friendly skeleton.")
 catrina.set_conversation("Why hello there, friend!")
 ballroom.set_character(catrina)
-                         
+
 key = Item("key")
 key.set_description ("a small shiny key")
 
@@ -78,8 +78,8 @@ kitchen.set_item(cheese)
 
 wine_cellar.set_item(broken_glass)
 
-gym.set_item(weight)                         
-                         
+gym.set_item(weight)
+
 current_room = kitchen
 
 backpack = []
