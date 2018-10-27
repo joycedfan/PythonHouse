@@ -87,6 +87,8 @@ wine_cellar.set_item(broken_glass)
 gym.set_item(weight)
 
 kitchen.set_item(bread)
+                         
+dining_hall.set_item(broken_chair)
 
 current_room = kitchen
 
