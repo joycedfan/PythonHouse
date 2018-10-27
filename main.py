@@ -74,6 +74,7 @@ bread = Item("bread")
 bread.set_description ("a freshly baked loaf of bread")
                          
 broken_chair = Item("broken chair")
+broken_chair.set_description ("a useless broken chair")
 
 greenhouse.set_item(flower_pot)
 
