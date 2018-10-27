@@ -72,6 +72,8 @@ flower_pot.set_description ("a small yellow flower pot containing a single daisy
 
 bread = Item("bread")
 bread.set_description ("a freshly baked loaf of bread")
+                         
+broken_chair = Item("broken chair")
 
 greenhouse.set_item(flower_pot)
 
