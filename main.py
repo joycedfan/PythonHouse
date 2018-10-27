@@ -70,6 +70,9 @@ weight.set_description ("a ten pound iron weight")
 flower_pot = Item("flower pot")
 flower_pot.set_description ("a small yellow flower pot containing a single daisy")
 
+bread = Item("bread")
+bread.set_description ("a freshly baked loaf of bread")
+
 greenhouse.set_item(flower_pot)
 
 swimming_pool.set_item(key)
@@ -79,6 +82,8 @@ kitchen.set_item(cheese)
 wine_cellar.set_item(broken_glass)
 
 gym.set_item(weight)
+
+kitchen.set_item(bread)
 
 current_room = kitchen
 
