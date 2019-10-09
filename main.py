@@ -55,6 +55,10 @@ catrina = Friend("Catrina", "a tall friendly skeleton.")
 catrina.set_conversation("Why hello there, friend!")
 ballroom.set_character(catrina)
 
+chester = Friend("Chester", "a small, shy mouse.")
+chester.set_conversation("Squeak!")
+ketchen.set_character(chester)
+
 key = Item("key")
 key.set_description ("a small shiny key")
 
