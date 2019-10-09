@@ -65,9 +65,14 @@ catrina = Friend("Catrina", "a tall friendly skeleton.")
 catrina.set_conversation("Why hello there, friend!")
 ballroom.set_character(catrina)
 
-chester = Friend("Chester", "a small, shy mouse.")
+chester = Enemy("Chester", "a small, shy mouse.")
 chester.set_conversation("Squeak!")
-ketchen.set_character(chester)
+chester.set_weakness("cheese")
+kitchen.set_character(chester)
+
+brodie = Friend("Brodie", "a friendly brown labrador retriever.")
+brodie.set_conversation("Woof!")
+greenhouse.set_character(brodie)
 
 key = Item("key")
 key.set_description ("a small shiny key")
@@ -147,7 +152,7 @@ while dead == False:
         if fight_with in backpack:
           
           if inhabitant.fight(fight_with) == True:
-            print("Horray, you won the fight!")
+            print("Horray, you won the fight! Or at least you distracted your opponent long enough to escape.")
             print("Now to find a way out of here...")
             current_room.character = None
           else:
