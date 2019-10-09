@@ -29,12 +29,17 @@ gym.set_description ("A huge room with a glass ceiling and one yoga ball in the 
 greenhouse = Room("Greenhouse")
 greenhouse.set_description ("A hot and humid room filled with scrawling vines.")
 
+office = Room("Office")
+office.set_description ("A dimly lit room where many hours were lost seeking illumination.")
+
 kitchen.link_room(dining_hall, "south")
 dining_hall.link_room(kitchen, "north")
 dining_hall.link_room(ballroom, "west")
 ballroom.link_room(dining_hall, "east")
 hallway.link_room(ballroom, "south")
 ballroom.link_room(hallway, "north")
+hallway.link_room(office, "east")
+office.link_room(hallway, "west")
 cellar.link_room(kitchen, "up")
 kitchen.link_room(cellar, "down")
 cellar.link_room(wine_cellar, "east")
