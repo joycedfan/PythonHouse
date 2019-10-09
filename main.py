@@ -80,6 +80,11 @@ bread.set_description ("a freshly baked loaf of bread")
 broken_chair = Item("broken chair")
 broken_chair.set_description ("a useless broken chair")
 
+floppy_disk = Item("floppy disk")
+floppy_disk.set_description ("a small flat object, probably once used as a coaster")
+
+hallway.set_item(floppy_disk)
+
 greenhouse.set_item(flower_pot)
 
 swimming_pool.set_item(key)
