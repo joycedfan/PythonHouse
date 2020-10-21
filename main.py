@@ -79,6 +79,10 @@ chuck.set_conversation("Oo oo, ah ah!")
 chuck.set_weakness("banana")
 hallway.set_character(chuck)
 
+jordan = Friend("Jordan", "a well rounded, confident friend.")
+jordan.set_conversation("I'm working out my brain right now.")
+gym.set_character(jordan)
+
 key = Item("key")
 key.set_description ("a small shiny key")
 
