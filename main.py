@@ -74,6 +74,11 @@ brodie = Friend("Brodie", "a friendly brown labrador retriever.")
 brodie.set_conversation("Woof!")
 greenhouse.set_character(brodie)
 
+chuck = Enemy("Chuck", "an angry, hungry monkey.")
+chuck.set_conversation("Oo oo, ah ah!")
+chuck.set_weakness("banana")
+hallway.set_character(chuck)
+
 jordan = Friend("Jordan", "a well rounded, confident friend.")
 jordan.set_conversation("I'm working out my brain right now.")
 gym.set_character(jordan)
