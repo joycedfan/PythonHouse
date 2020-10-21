@@ -74,6 +74,11 @@ brodie = Friend("Brodie", "a friendly brown labrador retriever.")
 brodie.set_conversation("Woof!")
 greenhouse.set_character(brodie)
 
+chuck = Enemy("Chuck", "an angry, hungry monkey.")
+chuck.set_conversation("Oo oo, ah ah!")
+chuck.set_weakness("banana")
+hallway.set_character(chuck)
+
 key = Item("key")
 key.set_description ("a small shiny key")
 
@@ -91,7 +96,7 @@ flower_pot.set_description ("a small yellow flower pot containing a single daisy
 
 bread = Item("bread")
 bread.set_description ("a freshly baked loaf of bread")
-                         
+
 broken_chair = Item("broken chair")
 broken_chair.set_description ("a useless broken chair")
 
@@ -111,7 +116,7 @@ wine_cellar.set_item(broken_glass)
 gym.set_item(weight)
 
 kitchen.set_item(bread)
-                         
+
 dining_hall.set_item(broken_chair)
 
 current_room = kitchen
@@ -124,11 +129,11 @@ while dead == False:
 
     print ("\n")
     current_room.get_details()
-    
+
     inhabitant = current_room.get_character()
     if inhabitant is not None:
       inhabitant.describe()
-      
+
     inventory = current_room.get_item()
     if inventory is not None:
       inventory.describe()
@@ -150,7 +155,7 @@ while dead == False:
         print("What will you fight with?")
         fight_with = input()
         if fight_with in backpack:
-          
+
           if inhabitant.fight(fight_with) == True:
             print("Horray, you won the fight! Or at least you distracted your opponent long enough to escape.")
             print("Now to find a way out of here...")
@@ -177,7 +182,7 @@ while dead == False:
         print ("There is nothing here you can take.")
     elif command == "help":
       print ("Pick a direction or try talk, fight, hug or take.")
-        
+
     else:
       print("I don't know how to " + command + ".")
 
