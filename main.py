@@ -112,6 +112,11 @@ broken_chair.set_description ("a useless broken chair")
 floppy_disk = Item("floppy disk")
 floppy_disk.set_description ("a small flat object, probably once used as a coaster")
 
+banana = Item("banana")
+banana.set_description ("a more brown than yellow, overripe banana")
+
+cellar.set_item(banana)
+
 hallway.set_item(floppy_disk)
 
 greenhouse.set_item(flower_pot)
