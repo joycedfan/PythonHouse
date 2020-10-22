@@ -88,6 +88,11 @@ jordan = Friend("Jordan", "a well rounded, confident friend.")
 jordan.set_conversation("I'm working out my brain right now.")
 gym.set_character(jordan)
 
+shoe_monster = Enemy("Shoe Monster", "an oversized, smelly, muddy shoe.")
+shoe_monster.set_conversation("Squelch!")
+shoe_monster.set_weakness("shoe laces")
+mud_room.set_character(shoe_monster)
+
 key = Item("key")
 key.set_description ("a small shiny key")
 
@@ -103,6 +108,9 @@ weight.set_description ("a ten pound iron weight")
 flower_pot = Item("flower pot")
 flower_pot.set_description ("a small yellow flower pot containing a single daisy")
 
+shoe_laces = Item("shoe laces")
+shoe_laces.set_description ("a surprisingly clean pair of long white shoe laces")
+
 bread = Item("bread")
 bread.set_description ("a freshly baked loaf of bread")
 
@@ -115,11 +123,13 @@ floppy_disk.set_description ("a small flat object, probably once used as a coast
 banana = Item("banana")
 banana.set_description ("a more brown than yellow, overripe banana")
 
-cellar.set_item(banana)
+cellar.set_item(shoe_laces)
 
 hallway.set_item(floppy_disk)
 
 greenhouse.set_item(flower_pot)
+
+mud_room.set_item(banana)
 
 swimming_pool.set_item(key)
 
