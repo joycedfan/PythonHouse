@@ -35,6 +35,9 @@ office.set_description ("A dimly lit room where many hours were lost seeking ill
 grand_hall = Room("Grand Hall")
 grand_hall.set_description ("A large brightly lit room with a high ceiling and ornate paintings on the wall.")
 
+mud_room = Room("Mud Room")
+mud_room.set_description ("A room filled with mud and dirty outdoor shoes.")
+
 kitchen.link_room(dining_hall, "south")
 dining_hall.link_room(kitchen, "north")
 dining_hall.link_room(ballroom, "west")
@@ -55,6 +58,8 @@ gym.link_room(swimming_pool, "up")
 swimming_pool.link_room(gym, "down")
 kitchen.link_room(greenhouse, "west")
 greenhouse.link_room(kitchen, "east")
+hallway.link_room(mud_room, "west")
+mud_room.link_room(hallway, "east")
 
 dave = Enemy("Dave", "a smelly, hungry zombie.")
 dave.set_conversation("Brrlgrh... rgrhl... braaains...")
