@@ -7,21 +7,15 @@ class Room():
     self.character = None
     self.item = None
   
-
-  
   def set_character (self, new_character):
     self.character = new_character
     
-
   def set_item (self, new_item):
     self.item = new_item
 
-
-    
   def get_item (self):
     return self.item
-    
-    
+     
   def get_character (self):
     return self.character 
     
