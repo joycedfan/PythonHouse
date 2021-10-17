@@ -2,6 +2,7 @@ from room import Room
 from item import Item
 from character import Enemy, Character, Friend
 
+#Create rooms with descriptions
 kitchen = Room("Kitchen")
 kitchen.set_description("A dank and dirty room buzzing with flies.")
 
@@ -38,6 +39,7 @@ grand_hall.set_description ("A large brightly lit room with a high ceiling and o
 mud_room = Room("Mud Room")
 mud_room.set_description ("A room filled with mud and dirty outdoor shoes.")
 
+#Set room locations and directions
 kitchen.link_room(dining_hall, "south")
 dining_hall.link_room(kitchen, "north")
 dining_hall.link_room(ballroom, "west")
@@ -61,6 +63,7 @@ greenhouse.link_room(kitchen, "east")
 hallway.link_room(mud_room, "west")
 mud_room.link_room(hallway, "east")
 
+#Create characters
 dave = Enemy("Dave", "a smelly, hungry zombie.")
 dave.set_conversation("Brrlgrh... rgrhl... braaains...")
 dave.set_weakness("brains")
@@ -93,6 +96,7 @@ shoe_monster.set_conversation("Squelch!")
 shoe_monster.set_weakness("shoe laces")
 mud_room.set_character(shoe_monster)
 
+#Create items with descriptions
 key = Item("key")
 key.set_description ("a small shiny key")
 
@@ -123,30 +127,21 @@ floppy_disk.set_description ("a small flat object, probably once used as a coast
 banana = Item("banana")
 banana.set_description ("a more brown than yellow, overripe banana")
 
+#Set item locations
 cellar.set_item(shoe_laces)
-
 hallway.set_item(floppy_disk)
-
 greenhouse.set_item(flower_pot)
-
 mud_room.set_item(banana)
-
 swimming_pool.set_item(key)
-
 kitchen.set_item(cheese)
-
 wine_cellar.set_item(broken_glass)
-
 gym.set_item(weight)
-
 kitchen.set_item(bread)
-
 dining_hall.set_item(broken_chair)
 
+#Initialize
 current_room = kitchen
-
 backpack = []
-
 dead = False
 
 while dead == False:
@@ -162,7 +157,7 @@ while dead == False:
   if inventory is not None:
     inventory.describe()
 
-  command = raw_input("> ")
+  command = input("> ")
   #check whether a direction was typed
   if command in ["north", "south", "east", "west", "up", "down", "above", "below"]:
     current_room = current_room.move(command)
