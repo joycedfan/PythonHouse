@@ -106,7 +106,7 @@ key = Item("key")
 key.set_description ("a small shiny key")
 
 cheese = Item("cheese")
-cheese.set_description ("a cumbling block of smelly, rotting cheese")
+cheese.set_description ("a cumbling block of smelly, rotting cheese with numerous holes")
 
 broken_glass = Item("broken glass")
 broken_glass.set_description ("several broken bottles' worth of broken glass")
