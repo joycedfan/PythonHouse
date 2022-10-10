@@ -132,6 +132,9 @@ floppy_disk.set_description ("a small flat object, probably once used as a coast
 banana = Item("banana")
 banana.set_description ("a more brown than yellow, overripe banana")
 
+laundry_detergent = Item("laundry detergent")
+laundry_detergent.set_description ("a box of powdery laundry detergent that smells like sunshine")
+
 #Set item locations
 cellar.set_item(shoe_laces)
 hallway.set_item(floppy_disk)
