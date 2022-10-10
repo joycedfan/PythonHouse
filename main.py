@@ -4,16 +4,16 @@ from character import Enemy, Character, Friend
 
 #Create rooms with descriptions
 kitchen = Room("Kitchen")
-kitchen.set_description("A dank and dirty room buzzing with flies.")
+kitchen.set_description("A dank and dirty room buzzing with flies. A strange pool of smell liquid stains the floor in front of the fridge.")
 
 dining_hall = Room("Dining Hall")
-dining_hall.set_description("A large room with ornate golden decorations on every wall.")
+dining_hall.set_description("A large room with ornate golden decorations on every wall and an extra long table in the middle.")
 
 ballroom = Room("Ballroom")
-ballroom.set_description("A vast room with a shiny wooden floor. Huge candlesticks guard the entrance.")
+ballroom.set_description("A vast room with a shiny wooden floors. Huge candlesticks guard the entrance.")
 
 hallway = Room("Hallway")
-hallway.set_description ("A long hallway lined with paintings.")
+hallway.set_description ("A long hallway lined with paintings of shadowy figures.")
 
 cellar = Room("Cellar")
 cellar.set_description ("A dark smelly room littered with rotting food that emits a powerful odour.")
