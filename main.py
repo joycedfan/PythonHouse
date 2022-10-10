@@ -64,16 +64,16 @@ hallway.link_room(mud_room, "west")
 mud_room.link_room(hallway, "east")
 
 #Create characters
-dave = Enemy("Dave", "a smelly, hungry zombie.")
+dave = Enemy("Dave", "a smelly, hungry zombie that appears to be decomposing before your eyes.")
 dave.set_conversation("Brrlgrh... rgrhl... braaains...")
 dave.set_weakness("brains")
 dining_hall.set_character(dave)
 
-catrina = Friend("Catrina", "a tall friendly skeleton.")
+catrina = Friend("Catrina", "a tall friendly skeleton with shiny white bones.")
 catrina.set_conversation("Why hello there, friend!")
 ballroom.set_character(catrina)
 
-chester = Enemy("Chester", "a small, shy mouse.")
+chester = Enemy("Chester", "a small, shy mouse that can't keep still.")
 chester.set_conversation("Squeak!")
 chester.set_weakness("cheese")
 kitchen.set_character(chester)
@@ -82,7 +82,7 @@ brodie = Friend("Brodie", "a friendly brown labrador retriever.")
 brodie.set_conversation("Woof!")
 greenhouse.set_character(brodie)
 
-chuck = Enemy("Chuck", "an angry, hungry monkey.")
+chuck = Enemy("Chuck", "an angry, hungry, hairy monkey.")
 chuck.set_conversation("Oo oo, ah ah!")
 chuck.set_weakness("banana")
 hallway.set_character(chuck)
@@ -95,6 +95,11 @@ shoe_monster = Enemy("Shoe Monster", "an oversized, smelly, muddy shoe.")
 shoe_monster.set_conversation("Squelch!")
 shoe_monster.set_weakness("shoe laces")
 mud_room.set_character(shoe_monster)
+
+floating_hat = Enemy("Floatin Hat", "a mysterious hat floating 6 feet off the floor.")
+floating_hat.set_conversation("Hey! Where's my head?!")
+floating_hat.set_weakness("laundry detergent")
+greenhouse.set_character(floating_hat)
 
 #Create items with descriptions
 key = Item("key")
