@@ -154,6 +154,7 @@ wine_cellar.set_item(broken_glass)
 gym.set_item(weight)
 kitchen.set_item(bread)
 dining_hall.set_item(broken_chair)
+mud_room.set_item(mini_pumpkin)
 
 #Initialize
 current_room = kitchen
