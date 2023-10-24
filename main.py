@@ -140,6 +140,9 @@ banana.set_description ("a more brown than yellow, overripe banana")
 laundry_detergent = Item("laundry detergent")
 laundry_detergent.set_description ("a box of powdery laundry detergent that smells like sunshine")
 
+mini_pumpkin = Item("mini pumpkin")
+mini_pumpkin.set_description ("a small plastic pumpkin")
+
 #Set item locations
 cellar.set_item(shoe_laces)
 hallway.set_item(floppy_disk)
