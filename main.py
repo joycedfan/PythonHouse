@@ -106,6 +106,11 @@ floating_hat.set_conversation("Hey! Where's my head?!")
 floating_hat.set_weakness("laundry detergent")
 greenhouse.set_character(floating_hat)
 
+jack-o'-lantern = Enemy("Jack-O'-Lantern", "a large pumpkin with a glowing wicked smile.")
+jack-o'-lantern.set_conversation("I want guts!")
+jack-o'-lantern.set_weakness("mini_pumpkin")
+bedroom.set_character(jack-o'-lantern)
+
 #Create items with descriptions
 key = Item("key")
 key.set_description ("a small shiny key")
