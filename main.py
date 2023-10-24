@@ -39,6 +39,8 @@ grand_hall.set_description ("A large brightly lit room with a high ceiling and o
 mud_room = Room("Mud Room")
 mud_room.set_description ("A room filled with mud and dirty outdoor shoes.")
 
+bedroom = Room("Bedroom")
+
 #Set room locations and directions
 kitchen.link_room(dining_hall, "south")
 dining_hall.link_room(kitchen, "north")
