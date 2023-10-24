@@ -65,6 +65,8 @@ kitchen.link_room(greenhouse, "west")
 greenhouse.link_room(kitchen, "east")
 hallway.link_room(mud_room, "west")
 mud_room.link_room(hallway, "east")
+mud_room.link_room(bedroom, "west")
+bedroom.link_room(mud_room, "east)
 
 #Create characters
 dave = Enemy("Dave", "a smelly, hungry zombie that appears to be decomposing before your eyes.")
