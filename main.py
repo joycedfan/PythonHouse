@@ -40,6 +40,7 @@ mud_room = Room("Mud Room")
 mud_room.set_description ("A room filled with mud and dirty outdoor shoes.")
 
 bedroom = Room("Bedroom")
+bedroom.set_description ("A moderately sized room with a large window looking out over a garden."
 
 #Set room locations and directions
 kitchen.link_room(dining_hall, "south")
